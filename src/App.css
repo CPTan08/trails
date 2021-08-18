@@ -13,24 +13,3 @@
   width: 80%;
   height: 600px;
 }
-
-.captiontxt {
-  font-family: Georgia, serif;
-  font-size: 40px;
-  color: white;
-}
-
-.carousel .carousel-item {
-  height: 780px;
-}
-
-.carousel-item img {
-  position: absolute;
-  object-fit: cover;
-  max-height: 750px;
-}
-
-.header {
-  font-family: Georgia, serif;
-  font-size: 40px;
-}
