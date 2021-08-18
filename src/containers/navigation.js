@@ -1,16 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./navigation.css";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import Weather from "./weather";
-import Home from "./Home";
+import Home from "./home";
 
 function Navigation() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar collapseOnSelect expand="lg">
+        <Navbar collapseOnSelect expand="lg" className="navbar-text">
           <Container>
-            <Nav.Link>Home</Nav.Link>
+            <Nav.Link href="/home">Home</Nav.Link>
+            {/* <Nav.Link as={Home} to="/" >Home</Nav.Link> */}
             <Nav.Link href="https://www.nparks.gov.sg/activities/events-and-workshops">
               Upcoming Events
             </Nav.Link>
@@ -51,15 +53,13 @@ function Navigation() {
               </Nav>
               <Nav>
                 <Nav.Link href="#checklist">Trail Checklist</Nav.Link>
-                <Nav.Link as={Weather} href="./weather">
-                  Weather Forecast
-                </Nav.Link>
+                <Nav.Link href="/weather">Weather Forecast</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route path="/home" component={Home} />
           <Route path="/weather" component={Weather} />
           <Route
             path="/404"

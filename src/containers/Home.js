@@ -49,8 +49,8 @@ function Home() {
       <div>
         <iframe
           className="alltrails"
-          src="https://data.gov.sg/dataset/park-connector-loop/resource/c186e1b5-0e47-4891-8710-f9844b993449/view/514d0738-ffec-43f4-ae21-cd6a36bad111"
-          title="Map"
+          src="https://www.alltrails.com/widget/singapore?u=m"
+          title="All Trails Map"
         ></iframe>
       </div>
     </div>
