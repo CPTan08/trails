@@ -1,6 +1,8 @@
 .header {
   font-family: Georgia, serif;
   font-size: 60px;
+  color: black;
+  background-color: rgb(120, 157, 120);
 }
 
 .carousel-caption {

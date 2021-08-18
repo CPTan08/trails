@@ -1,8 +1,9 @@
-import "./slider.css";
+import React from "react";
+import "./home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 
-function Slider() {
+function Home() {
   return (
     <div>
       <div className="header">I AM A ...</div>
@@ -42,8 +43,18 @@ function Slider() {
           </Carousel.Item>
         </Carousel>
       </div>
+      <div>
+        <h3>Explore more via the Singapore Map</h3>
+      </div>
+      <div>
+        <iframe
+          className="alltrails"
+          src="https://data.gov.sg/dataset/park-connector-loop/resource/c186e1b5-0e47-4891-8710-f9844b993449/view/514d0738-ffec-43f4-ae21-cd6a36bad111"
+          title="Map"
+        ></iframe>
+      </div>
     </div>
   );
 }
 
-export default Slider;
+export default Home;
