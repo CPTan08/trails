@@ -2,6 +2,8 @@
 
 
 ## Sources
-
-Embedded map from https://data.gov.sg/dataset/park-connector-loop
+AllTrails
+Nparks
+Cheekiemonkies
+Data.gov.sg
 
