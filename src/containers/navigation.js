@@ -28,22 +28,22 @@ function Navigation() {
                     Bukit Timah
                   </NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">
-                    Labrador (coming soon)
+                    Labrador
                   </NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.3">
-                    Lower Peirce (coming soon)
+                    Lower Peirce
                   </NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.4">
-                    MacRitchie (coming soon)
+                    MacRitchie
                   </NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.5">
-                    Sungei Buloh Wetland (coming soon)
+                    Sungei Buloh Wetland
                   </NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.6">
-                    Upper Peirce (coming soon)
+                    Upper Peirce
                   </NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.7">
-                    Upper Seletar (coming soon)
+                    Upper Seletar
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="#Parks">Nature Parks</Nav.Link>
@@ -54,17 +54,20 @@ function Navigation() {
               </Nav>
               <Nav>
                 <Nav.Link href="#checklist">Trail Checklist</Nav.Link>
-                <Nav.Link href="/weather"></Nav.Link>
-                <Weather></Weather>
+                <Nav.Link href="/weather">24hr Forecast</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
         <Switch>
-          <Route path="/home" component={Home} />
-          <Route path="/weather" component={Weather} />
-          <Route path="/islands" component={IslandGallery} />
-          <Route path="/404" render={() => <div>Page Not Found</div>}></Route>
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/weather" component={Weather} />
+          <Route exact path="/islands" component={IslandGallery} />
+          <Route
+            exact
+            path="/404"
+            render={() => <div>Page Not Found</div>}
+          ></Route>
         </Switch>
       </BrowserRouter>
     </div>

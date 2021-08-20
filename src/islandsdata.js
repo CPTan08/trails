@@ -4,7 +4,8 @@ const ISLAND = [
     name: {
       english: "St John's Island - Lazarus Island",
     },
-    type: ["Moderate", "Ferry"],
+    diff: "Ferry",
+    type: ["Moderate"],
     base: {
       Dist: 7.9,
       Time: 4.5,
@@ -15,7 +16,8 @@ const ISLAND = [
     name: {
       english: "Kusu Island",
     },
-    type: ["Easy", "Ferry"],
+    diff: "Ferry",
+    type: ["Easy"],
     base: {
       Dist: 1.6,
       Time: 2,
@@ -26,7 +28,8 @@ const ISLAND = [
     name: {
       english: "Sentosa Coastal",
     },
-    type: ["Easy", "Car", "Bus"],
+    diff: "Car, Bus,Monorail",
+    type: ["Easy"],
     base: {
       Dist: 6,
       Time: 3,

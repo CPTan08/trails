@@ -14,11 +14,9 @@ class Weather extends Component {
       let resp = await fetch(URL);
       let response = await resp.json();
       this.setState({ items: response.items });
-
+      console.log(response);
       // .then((response) => response.json()) // convert data to json
       // .then((json) => {
-      //console.log(response);
-
       //   this.setState({ articles: json.articles });
       // }); // log data
     } catch (err) {
@@ -30,8 +28,10 @@ class Weather extends Component {
     return this.state.items.map((item, i) => {
       console.log({ item });
       return (
-        <div>24 Hours Weather</div>
-        //<div>{item.general}</div>
+        <div>
+          24 Hours Weather
+          <p>{item.general.forecast}</p>
+        </div>
       );
     });
   }
