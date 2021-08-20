@@ -6,14 +6,14 @@
 }
 
 .carousel-caption {
-  top: 520px;
+  top: 550px;
   font-family: Georgia, serif;
   font-size: 40px;
   color: white;
 }
 
 .carousel .carousel-item {
-  height: 750px;
+  height: 700px;
 }
 
 .carousel-item img {

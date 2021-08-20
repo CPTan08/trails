@@ -2,8 +2,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./navigation.css";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import Weather from "./weather";
+import Weather from "../weather";
 import Home from "./home";
+import IslandGallery from "../islands";
 
 function Navigation() {
   return (
@@ -49,11 +50,12 @@ function Navigation() {
                 <Nav.Link href="https://www.cheekiemonkie.net/2021/02/off-the-beaten-track-hiking-trails-singapore-for-families.html">
                   Off The Beaten
                 </Nav.Link>
-                <Nav.Link href="#islands">Islands Hopping</Nav.Link>
+                <Nav.Link href="/islands">Islands Hopping</Nav.Link>
               </Nav>
               <Nav>
                 <Nav.Link href="#checklist">Trail Checklist</Nav.Link>
-                <Nav.Link href="/weather">Weather Forecast</Nav.Link>
+                <Nav.Link href="/weather"></Nav.Link>
+                <Weather></Weather>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -61,6 +63,7 @@ function Navigation() {
         <Switch>
           <Route path="/home" component={Home} />
           <Route path="/weather" component={Weather} />
+          <Route path="/islands" component={IslandGallery} />
           <Route
             path="/404"
             render={() => (

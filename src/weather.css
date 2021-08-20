@@ -1,0 +1,20 @@
+.parent {
+  /* display: flex; */
+  border-radius: 25px;
+  border: 2px dotted #73ad21;
+  padding: 20px;
+  margin: 20px;
+}
+
+.article-time {
+  font-weight: bold;
+}
+.article-content {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.article-title {
+  font-weight: bold;
+  font-size: 25px;
+}
