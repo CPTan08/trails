@@ -3,7 +3,7 @@ import "./navigation.css";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Weather from "../weather";
-import Home from "./home";
+import Home from "./Home";
 import IslandGallery from "../islands";
 
 function Navigation() {
