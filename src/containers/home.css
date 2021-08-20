@@ -1,0 +1,23 @@
+.header {
+  font-family: Georgia, serif;
+  font-size: 60px;
+  color: black;
+  background-color: rgb(120, 157, 120);
+}
+
+.carousel-caption {
+  top: 550px;
+  font-family: Georgia, serif;
+  font-size: 40px;
+  color: white;
+}
+
+.carousel .carousel-item {
+  height: 700px;
+}
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  max-height: 700px;
+}

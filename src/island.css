@@ -1,0 +1,56 @@
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 300px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 450px;
+  border-radius: 10px;
+  font: size 50px;
+  font-family: "Georgia, serif";
+}
+
+.type {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 28px;
+  border: 1px solid black;
+  display: inline-block;
+  font-size: 17px;
+  padding: 10px 40px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.easy {
+  background-color: #bcecb3;
+}
+.moderate {
+  background-color: #ffff00;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ferry {
+  background-color: lightblue;
+}
+
+.car {
+  background-color: rgb(148, 136, 109);
+}
+
+.bus {
+  background-color: rgb(148, 136, 109);
+}
