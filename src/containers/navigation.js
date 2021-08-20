@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./navigation.css";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Weather from "../weather";
 import Home from "./home";
 import IslandGallery from "../islands";
@@ -24,11 +24,11 @@ function Navigation() {
                   title="Nature Reserves"
                   id="collasible-nav-dropdown"
                 >
-                  <NavDropdown.Item href="#action/3.1">
+                  <NavDropdown.Item href="https://www.alltrails.com/parks/singapore/central/bukit-timah-nature-reserve/walking">
                     Bukit Timah
                   </NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">
-                    Labrador
+                    Labrador (coming soon)
                   </NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.3">
                     Lower Peirce (coming soon)
@@ -64,15 +64,7 @@ function Navigation() {
           <Route path="/home" component={Home} />
           <Route path="/weather" component={Weather} />
           <Route path="/islands" component={IslandGallery} />
-          <Route
-            path="/404"
-            render={() => (
-              <div>
-                <h1>Page Not Found</h1>
-              </div>
-            )}
-          />
-          <Redirect to="/404" />
+          <Route path="/404" render={() => <div>Page Not Found</div>}></Route>
         </Switch>
       </BrowserRouter>
     </div>
